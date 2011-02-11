@@ -1,9 +1,11 @@
 <?php
 /**
- * $Horde: luxor/config/languages.php.dist,v 1.11 2008/07/30 20:51:53 chuck Exp $
- *
  * This file contains all the configuration information for the various
  * languages that are supported. Documentation is inline.
+ *
+ * IMPORTANT: Local overrides should be placed in languages.local.php, or
+ * languages-servername.php if the 'vhosts' setting has been enabled in Horde's
+ * configuration.
  */
 $languages = array(
 
@@ -284,3 +286,8 @@ $languages = array(
                           ),
               )
 );
+
+/* Local overrides. */
+if (file_exists(dirname(__FILE__) . '/languages.local.php')) {
+    include dirname(__FILE__) . '/languages.local.php';
+}
