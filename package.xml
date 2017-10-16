@@ -10,7 +10,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-13</date>
+ <date>2017-10-16</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -126,7 +126,7 @@
    <file name=".htaccess" role="horde" />
    <file name="COPYING" role="doc" />
    <file name="index.php" role="horde" />
-   <file name="README" role="doc" />
+   <file name="README.rst" role="doc" />
    <file name="search.php" role="horde" />
    <file name="source.php" role="horde" />
    <file name="symbol.php" role="horde" />
@@ -147,7 +147,7 @@
    <install as="luxor/.htaccess" name=".htaccess" />
    <install as="COPYING" name="COPYING" />
    <install as="luxor/index.php" name="index.php" />
-   <install as="README" name="README" />
+   <install as="README.rst" name="README.rst" />
    <install as="luxor/search.php" name="search.php" />
    <install as="luxor/source.php" name="source.php" />
    <install as="luxor/symbol.php" name="symbol.php" />
@@ -209,7 +209,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-13</date>
+   <date>2017-10-16</date>
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
 * Initial release.
