@@ -10,7 +10,7 @@
   <email>jan@horde.org</email>
   <active>yes</active>
  </lead>
- <date>2017-10-16</date>
+ <date>2017-10-17</date>
  <version>
   <release>1.0.0alpha1</release>
   <api>1.0.0alpha1</api>
@@ -124,8 +124,8 @@
     </dir> <!-- /themes/default -->
    </dir> <!-- /themes -->
    <file name=".htaccess" role="horde" />
-   <file name="COPYING" role="doc" />
    <file name="index.php" role="horde" />
+   <file name="LICENSE" role="doc" />
    <file name="README.rst" role="doc" />
    <file name="search.php" role="horde" />
    <file name="source.php" role="horde" />
@@ -145,12 +145,6 @@
  <phprelease>
   <filelist>
    <install as="luxor/.htaccess" name=".htaccess" />
-   <install as="COPYING" name="COPYING" />
-   <install as="luxor/index.php" name="index.php" />
-   <install as="README.rst" name="README.rst" />
-   <install as="luxor/search.php" name="search.php" />
-   <install as="luxor/source.php" name="source.php" />
-   <install as="luxor/symbol.php" name="symbol.php" />
    <install as="luxor-indexer" name="bin/luxor-indexer" />
    <install as="luxor/config/.htaccess" name="config/.htaccess" />
    <install as="luxor/config/backends.php" name="config/backends.php" />
@@ -161,42 +155,48 @@
    <install as="CREDITS" name="doc/CREDITS" />
    <install as="INSTALL" name="doc/INSTALL" />
    <install as="TODO" name="doc/TODO" />
+   <install as="luxor/index.php" name="index.php" />
    <install as="luxor/js/show_var.js" name="js/show_var.js" />
    <install as="luxor/lib/.htaccess" name="lib/.htaccess" />
    <install as="luxor/lib/Application.php" name="lib/Application.php" />
    <install as="luxor/lib/Driver.php" name="lib/Driver.php" />
+   <install as="luxor/lib/Driver/sql.php" name="lib/Driver/sql.php" />
    <install as="luxor/lib/Files.php" name="lib/Files.php" />
+   <install as="luxor/lib/Files/plain.php" name="lib/Files/plain.php" />
    <install as="luxor/lib/Lang.php" name="lib/Lang.php" />
+   <install as="luxor/lib/Lang/Generic.php" name="lib/Lang/Generic.php" />
    <install as="luxor/lib/Luxor.php" name="lib/Luxor.php" />
    <install as="luxor/lib/SimpleParse.php" name="lib/SimpleParse.php" />
    <install as="luxor/lib/Tagger.php" name="lib/Tagger.php" />
-   <install as="luxor/lib/Driver/sql.php" name="lib/Driver/sql.php" />
-   <install as="luxor/lib/Files/plain.php" name="lib/Files/plain.php" />
-   <install as="luxor/lib/Lang/Generic.php" name="lib/Lang/Generic.php" />
+   <install as="LICENSE" name="LICENSE" />
    <install as="luxor/locale/.htaccess" name="locale/.htaccess" />
-   <install as="luxor/locale/luxor.pot" name="locale/luxor.pot" />
    <install as="luxor/locale/de/LC_MESSAGES/luxor.mo" name="locale/de/LC_MESSAGES/luxor.mo" />
    <install as="luxor/locale/de/LC_MESSAGES/luxor.po" name="locale/de/LC_MESSAGES/luxor.po" />
    <install as="luxor/locale/es/LC_MESSAGES/luxor.mo" name="locale/es/LC_MESSAGES/luxor.mo" />
    <install as="luxor/locale/es/LC_MESSAGES/luxor.po" name="locale/es/LC_MESSAGES/luxor.po" />
    <install as="luxor/locale/fi/LC_MESSAGES/luxor.mo" name="locale/fi/LC_MESSAGES/luxor.mo" />
    <install as="luxor/locale/fi/LC_MESSAGES/luxor.po" name="locale/fi/LC_MESSAGES/luxor.po" />
+   <install as="luxor/locale/luxor.pot" name="locale/luxor.pot" />
    <install as="luxor/locale/lv/LC_MESSAGES/luxor.mo" name="locale/lv/LC_MESSAGES/luxor.mo" />
    <install as="luxor/locale/lv/LC_MESSAGES/luxor.po" name="locale/lv/LC_MESSAGES/luxor.po" />
    <install as="luxor/locale/ro/LC_MESSAGES/luxor.mo" name="locale/ro/LC_MESSAGES/luxor.mo" />
    <install as="luxor/locale/ro/LC_MESSAGES/luxor.po" name="locale/ro/LC_MESSAGES/luxor.po" />
+   <install as="README.rst" name="README.rst" />
    <install as="luxor/scripts/.htaccess" name="scripts/.htaccess" />
    <install as="luxor/scripts/sql/luxor.sql" name="scripts/sql/luxor.sql" />
+   <install as="luxor/search.php" name="search.php" />
+   <install as="luxor/source.php" name="source.php" />
+   <install as="luxor/symbol.php" name="symbol.php" />
    <install as="luxor/templates/.htaccess" name="templates/.htaccess" />
    <install as="luxor/templates/directory.html.php" name="templates/directory.html.php" />
    <install as="luxor/templates/headerbar.inc" name="templates/headerbar.inc" />
    <install as="luxor/templates/menu.inc" name="templates/menu.inc" />
    <install as="luxor/templates/symbol.html.php" name="templates/symbol.html.php" />
-   <install as="luxor/themes/default/screen.css" name="themes/default/screen.css" />
    <install as="luxor/themes/default/graphics/favicon.ico" name="themes/default/graphics/favicon.ico" />
    <install as="luxor/themes/default/graphics/folder.png" name="themes/default/graphics/folder.png" />
    <install as="luxor/themes/default/graphics/luxor.png" name="themes/default/graphics/luxor.png" />
    <install as="luxor/themes/default/graphics/parent.png" name="themes/default/graphics/parent.png" />
+   <install as="luxor/themes/default/screen.css" name="themes/default/screen.css" />
   </filelist>
  </phprelease>
  <changelog>
@@ -209,7 +209,7 @@
     <release>alpha</release>
     <api>alpha</api>
    </stability>
-   <date>2017-10-16</date>
+   <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
 * Initial release.
