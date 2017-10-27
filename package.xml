@@ -21,7 +21,26 @@
  </stability>
  <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
  <notes>
-* Initial release.
+* [jan] Add Finnish translation (Leena Heino &lt;liinu@uta.fi&gt;).
+* [jan] Add Latvian translation (Jānis Eisaks &lt;jancs@dv.lv&gt;).
+* [jan] Provide default configuration files instead of .dist versions.
+* [jan] Rename sources.php to backends.php.
+* [ben] Better support for MS-SQL.
+* [cjh] Support mod_rewrite style URLs in addition to GET.
+* [mas] Change any output of &lt;b&gt; and &lt;i&gt; tags to &lt;strong&gt; and &lt;em&gt; for better accessibility support.
+* [cjh] Allow disabling the show_var javascript (Bug #1270).
+* [jan] Add Spanish translation (Manuel Perez Ayala &lt;mperaya@alcazaba.unex.es&gt;).
+* [cjh] Cache markup of files.
+* [cjh] Improve layout of identifier pages.
+* [cjh] genxref.php is now solely a command line script and lives in the scripts/ directory.
+* [cjh] Make sure to clean out the database before adding new data so as not to get duplicate entries for identifiers.
+* [jan] Add German translation.
+* [cjh] Add symbol search functionality.
+* [cjh] Fix spacing of source code.
+* [cjh] Add settings to filter out certain directories and filenames.
+* [jan] Add Romanian translation (Eugen Hoanca &lt;eugenh@urban-grafx.ro&gt;).
+* [jan] Implement indexing and referencing.
+* [jan] Initial port from LXR.
  </notes>
  <contents>
   <dir baseinstalldir="/" name="/">
@@ -212,7 +231,26 @@
    <date>2017-10-17</date>
    <license uri="http://www.horde.org/licenses/gpl">GPL-2.0</license>
    <notes>
-* Initial release.
+* [jan] Add Finnish translation (Leena Heino &lt;liinu@uta.fi&gt;).
+* [jan] Add Latvian translation (Jānis Eisaks &lt;jancs@dv.lv&gt;).
+* [jan] Provide default configuration files instead of .dist versions.
+* [jan] Rename sources.php to backends.php.
+* [ben] Better support for MS-SQL.
+* [cjh] Support mod_rewrite style URLs in addition to GET.
+* [mas] Change any output of &lt;b&gt; and &lt;i&gt; tags to &lt;strong&gt; and &lt;em&gt; for better accessibility support.
+* [cjh] Allow disabling the show_var javascript (Bug #1270).
+* [jan] Add Spanish translation (Manuel Perez Ayala &lt;mperaya@alcazaba.unex.es&gt;).
+* [cjh] Cache markup of files.
+* [cjh] Improve layout of identifier pages.
+* [cjh] genxref.php is now solely a command line script and lives in the scripts/ directory.
+* [cjh] Make sure to clean out the database before adding new data so as not to get duplicate entries for identifiers.
+* [jan] Add German translation.
+* [cjh] Add symbol search functionality.
+* [cjh] Fix spacing of source code.
+* [cjh] Add settings to filter out certain directories and filenames.
+* [jan] Add Romanian translation (Eugen Hoanca &lt;eugenh@urban-grafx.ro&gt;).
+* [jan] Implement indexing and referencing.
+* [jan] Initial port from LXR.
    </notes>
   </release>
  </changelog>
