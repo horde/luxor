@@ -23,4 +23,10 @@ license:
   uri: http://www.horde.org/licenses/gpl
 dependencies:
   required:
-    php: ^5.3
+    php: ^8
+autoload:
+  classmap:
+    - lib/
+  psr-4:
+    Horde\Luxor\: src/
+vendor: horde
