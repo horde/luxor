@@ -6,6 +6,9 @@
  * @since   Luxor 0.1
  * @package Luxor
  */
+
+use Horde\Luxor\LuxorConfig;
+
 class Luxor_Driver
 {
     /**
@@ -25,8 +28,10 @@ class Luxor_Driver
      */
     function factory($source, $driver = null, $params = null)
     {
+        $config = $injector->get('LuxorConfig');
+
         if (is_null($driver)) {
-            $driver = $GLOBALS['conf']['storage']['driver'];
+            $driver = $config->get('storage.driver'];
         }
 
         $driver = basename($driver);
